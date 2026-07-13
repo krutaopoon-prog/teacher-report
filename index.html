@@ -85,26 +85,93 @@
 
       <div class="profile-detail reveal">
         <div class="info-block">
-          <h4><span class="info-num">๑</span>ภาระงานสอน · ภาคเรียนที่ ๒ ปีการศึกษา ๒๕๖๘</h4>
-          <div class="table-wrap">
-            <table class="data-table">
-              <thead><tr><th>รหัสวิชา</th><th>ชื่อวิชา</th><th>ระดับชั้น</th><th>คาบ/สัปดาห์</th></tr></thead>
-              <tbody>
-                <tr><td>30105-2002</td><td>สมองกลฝังตัว</td><td>ปวส.</td><td>5</td></tr>
-                <tr><td>20127-2004</td><td>อุปกรณ์และวงจรอิเล็กทรอนิกส์</td><td>ปวช.</td><td>—</td></tr>
-              </tbody>
-            </table>
+          <h4><span class="info-num">๑</span>ภาระงานสอน</h4>
+          <div class="term-tabs" id="termTabs">
+            <button class="term-tab active" data-term="t1">ภาคเรียนที่ ๒ / ๒๕๖๘</button>
+            <button class="term-tab" data-term="t2">ภาคเรียนที่ ๑ / ๒๕๖๙</button>
           </div>
-          <p class="table-note">* แก้ไข/เพิ่มรายวิชาได้ในไฟล์ <code>index.html</code></p>
+
+          <!-- เทอม 2/2568 -->
+          <div class="term-panel active" data-term="t1">
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead><tr><th>รหัสวิชา</th><th>ชื่อวิชา</th><th>ระดับชั้น</th><th>คาบ/สัปดาห์</th></tr></thead>
+                <tbody>
+                  <tr><td>20100-1005</td><td>งานไฟฟ้าและอิเล็กทรอนิกส์เบื้องต้น</td><td>ปวช.</td><td>4</td></tr>
+                  <tr><td>20105-2005</td><td>ไมโครคอนโทรลเลอร์</td><td>ปวช.</td><td>5</td></tr>
+                  <tr><td>20105-2122</td><td>อินเตอร์เฟสเบื้องต้น</td><td>ปวช.</td><td>4</td></tr>
+                  <tr><td>20127-2004</td><td>อุปกรณ์และวงจรอิเล็กทรอนิกส์</td><td>ปวช.</td><td>4</td></tr>
+                  <tr><td>30105-2002</td><td>สมองกลฝังตัว</td><td>ปวส.</td><td>5</td></tr>
+                  <tr><td>30105-2004</td><td>เทคนิคการอินเตอร์เฟซ</td><td>ปวส.</td><td>10</td></tr>
+                  <tr><td>20000-2002</td><td>กิจกรรมลูกเสือวิสามัญ ๒</td><td>ปวช.</td><td>2</td></tr>
+                  <tr><td>PLC</td><td>ชุมชนการเรียนรู้ทางวิชาชีพ (PLC)</td><td>—</td><td>2</td></tr>
+                </tbody>
+                <tfoot><tr><td colspan="3">รวมชั่วโมงสอน (ในเวลา ๒๔ · นอกเวลา ๑๐)</td><td>36</td></tr></tfoot>
+              </table>
+            </div>
+          </div>
+
+          <!-- เทอม 1/2569 -->
+          <div class="term-panel" data-term="t2">
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead><tr><th>รหัสวิชา</th><th>ชื่อวิชา</th><th>ระดับชั้น</th><th>คาบ/สัปดาห์</th></tr></thead>
+                <tbody>
+                  <tr><td>20105-2014</td><td>เครือข่ายคอมพิวเตอร์</td><td>ปวช.</td><td>4</td></tr>
+                  <tr><td>20105-2021</td><td>อินเตอร์เฟซเบื้องต้น</td><td>ปวช.</td><td>4</td></tr>
+                  <tr><td>30105-2002</td><td>สมองกลฝังตัว</td><td>ปวส.</td><td>5</td></tr>
+                  <tr><td>30105-2009</td><td>การประยุกต์ใช้ระบบ SCADA ในงานอุตสาหกรรม</td><td>ปวส.</td><td>5</td></tr>
+                  <tr><td>20000-2003</td><td>กิจกรรมเสริมสร้างสุจริต จิตอาสา</td><td>ปวช.</td><td>2</td></tr>
+                  <tr><td>PLC</td><td>ชุมชนการเรียนรู้ทางวิชาชีพ (PLC)</td><td>—</td><td>2</td></tr>
+                </tbody>
+                <tfoot><tr><td colspan="3">รวมชั่วโมงสอน (ในเวลา ๒๐ · นอกเวลา ๐)</td><td>22</td></tr></tfoot>
+              </table>
+            </div>
+          </div>
         </div>
 
         <div class="info-block">
           <h4><span class="info-num">๒</span>การปฏิบัติหน้าที่อื่นที่ได้รับมอบหมาย</h4>
-          <div class="chip-row">
-            <span class="chip">ครูที่ปรึกษา ปวช.๑/๑ สาขาอิเล็กทรอนิกส์</span>
-            <span class="chip">ผู้ช่วยงานทะเบียน</span>
-            <span class="chip">งานกิจกรรมแผนกวิชา</span>
-            <span class="chip">ครูเวรประจำวัน</span>
+          <p class="duty-src">ตามคำสั่งวิทยาลัยเทคนิคอุตรดิตถ์ ที่ ๒๓๗/๒๕๖๙ เรื่อง การมอบหมายหน้าที่ราชการ</p>
+
+          <div class="duty-highlight">
+            <span class="chip chip-star">★ รองหัวหน้างานปกครองและความปลอดภัยนักเรียน นักศึกษา</span>
+            <span class="chip chip-star">ครูประจำแผนกวิชาช่างอิเล็กทรอนิกส์</span>
+            <span class="chip chip-star">ครูที่ปรึกษา ปวช.๑/๑ สาขาอิเล็กทรอนิกส์</span>
+          </div>
+
+          <div class="duty-group">
+            <h5 class="duty-cat">ฝ่ายวิชาการ</h5>
+            <div class="chip-row">
+              <span class="chip">งานพัฒนาหลักสูตรและการจัดการเรียนรู้</span>
+              <span class="chip">งานวัดผลและประเมินผล</span>
+              <span class="chip">งานวิทยบริการและเทคโนโลยีการศึกษา</span>
+            </div>
+          </div>
+
+          <div class="duty-group">
+            <h5 class="duty-cat">ฝ่ายกิจการนักเรียน นักศึกษา</h5>
+            <div class="chip-row">
+              <span class="chip">งานกิจกรรมนักเรียน นักศึกษา</span>
+              <span class="chip">งานครูที่ปรึกษาและการแนะแนว</span>
+              <span class="chip">งานสวัสดิการนักเรียน นักศึกษา</span>
+              <span class="chip">งานโครงการพิเศษและการบริการ</span>
+            </div>
+          </div>
+
+          <div class="duty-group">
+            <h5 class="duty-cat">ฝ่ายบริหารทรัพยากร</h5>
+            <div class="chip-row">
+              <span class="chip">งานทะเบียน</span>
+              <span class="chip">งานส่งเสริมการวิจัย นวัตกรรม และสิ่งประดิษฐ์</span>
+            </div>
+          </div>
+
+          <div class="duty-group">
+            <h5 class="duty-cat">ฝ่ายยุทธศาสตร์และแผนงาน</h5>
+            <div class="chip-row">
+              <span class="chip">งานส่งเสริมธุรกิจและการเป็นผู้ประกอบการ</span>
+            </div>
           </div>
         </div>
       </div>

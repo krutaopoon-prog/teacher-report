@@ -38,6 +38,20 @@
     img.src = src;
   });
 
+  /* ---------- term tabs (ภาระงานสอน) ---------- */
+  var termTabs = document.getElementById("termTabs");
+  if (termTabs) {
+    termTabs.addEventListener("click", function (e) {
+      var tab = e.target.closest(".term-tab");
+      if (!tab) return;
+      var term = tab.getAttribute("data-term");
+      termTabs.querySelectorAll(".term-tab").forEach(function (t) { t.classList.toggle("active", t === tab); });
+      document.querySelectorAll(".term-panel").forEach(function (p) {
+        p.classList.toggle("active", p.getAttribute("data-term") === term);
+      });
+    });
+  }
+
   /* ---------- reveal on scroll ---------- */
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
