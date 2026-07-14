@@ -97,9 +97,9 @@ h1,h2,h3,h4,h5{font-family:var(--ff-head);color:var(--ink-900);line-height:1.25;
 .section{padding:clamp(64px,9vw,120px) 0}
 .section-alt{background:var(--cream)}
 .section-head{text-align:center;max-width:760px;margin:0 auto clamp(40px,6vw,64px)}
-.kicker{display:inline-block;font-family:var(--ff-head);font-weight:600;font-size:14px;
-  letter-spacing:.08em;color:var(--teal-700);text-transform:none;
-  padding:6px 16px;border-radius:999px;background:var(--teal-50);margin-bottom:16px}
+.kicker{display:inline-block;font-family:var(--ff-head);font-weight:700;font-size:clamp(1.05rem,2.2vw,1.4rem);
+  letter-spacing:.06em;color:var(--teal-700);text-transform:none;
+  padding:9px 22px;border-radius:999px;background:var(--teal-50);margin-bottom:16px}
 .kicker-feature{color:var(--gold-600);background:var(--gold-50)}
 .section-title{font-size:clamp(1.9rem,4.5vw,3rem);letter-spacing:-.01em}
 .section-title::after{content:"";display:block;width:64px;height:4px;margin:18px auto 0;border-radius:4px;
@@ -196,7 +196,7 @@ code{background:var(--cream-2);padding:2px 7px;border-radius:6px;font-size:.86em
 .showcase-split{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px}
 
 .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
-.gallery-sm{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.gallery-sm{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
 .gallery-xs{grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px}
 .gallery-masonry{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
 .g-item{position:relative;border-radius:var(--radius-sm);overflow:hidden;cursor:pointer;
@@ -226,15 +226,15 @@ code{background:var(--cream-2);padding:2px 7px;border-radius:6px;font-size:.86em
 .video-empty strong{display:block;font-family:var(--ff-head);color:var(--gold-600);font-size:1.15rem;margin-bottom:8px}
 .video-empty code{background:#fff}
 
-/* subsections 2.2–2.6 */
-.subsection-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px;margin-top:36px}
-.subsection{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);transition:.25s}
-.subsection:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
-.subsection-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
-.ss-num{font-family:var(--ff-head);font-weight:700;font-size:1.05rem;color:#fff;
+/* subsections 2.2–2.6 — เรียงลงมาทีละเรื่อง อ่านต่อเนื่อง */
+.subsection-grid{display:block;margin-top:36px}
+.subsection{padding:28px 0;border-bottom:1px solid var(--line)}
+.subsection:last-child{border-bottom:none}
+.subsection-head{display:flex;align-items:baseline;gap:14px;margin-bottom:14px}
+.ss-num{font-family:var(--ff-head);font-weight:700;font-size:1.35rem;color:#fff;
   background:linear-gradient(135deg,var(--teal-700),var(--teal-500));
-  padding:6px 12px;border-radius:10px;flex:none}
-.subsection-head h3{font-size:1.2rem}
+  padding:8px 16px;border-radius:12px;flex:none;align-self:center}
+.subsection-head h3{font-size:1.8rem}
 .ss-text{color:var(--ink-500);font-size:15px;margin-bottom:18px;line-height:1.65}
 
 /* ---------- ด้านที่ 1 ---------- */
