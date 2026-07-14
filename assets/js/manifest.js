@@ -187,8 +187,6 @@ window.SITE_MANIFEST = {
     "cert-05.png",
     "cert-06.png",
     "cert-07.png",
-    "cert-08.jpg",
-    "cert-09.jpg",
     "cert-10.png",
     "cert-11.png",
     "cert-12.png",
