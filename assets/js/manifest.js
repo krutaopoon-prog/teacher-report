@@ -1,6 +1,8 @@
 /* สร้างอัตโนมัติโดย build-manifest.py — ห้ามแก้ด้วยมือ */
 window.SITE_MANIFEST = {
   "d1-1-vinai": [
+    "20260615_074754.gif",
+    "LINE_ALBUM_ปฏิบัติหน้าที่ เวรวันพุธ 20 พ.ค. 2569_260714_6.jpg",
     "pdf-01.jpeg",
     "pdf-02.jpeg",
     "pdf-03.jpeg",
@@ -9,10 +11,7 @@ window.SITE_MANIFEST = {
     "pdf-06.jpeg",
     "pdf-07.jpeg",
     "pdf-08.jpeg",
-    "pdf-09.jpeg",
-    "pdf-10.jpeg",
-    "pdf-11.jpeg",
-    "pdf-12.jpeg"
+    "pdf-09.jpeg"
   ],
   "d1-2-khunnatham": [
     "pdf-01.jpeg",
