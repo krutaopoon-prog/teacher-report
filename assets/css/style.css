@@ -215,6 +215,26 @@ code{background:var(--cream-2);padding:2px 7px;border-radius:6px;font-size:.86em
   background:var(--cream);padding:10px}
 .g-empty span{display:block;font-size:22px;margin-bottom:6px;opacity:.5}
 
+/* interactive media cards (สื่อโต้ตอบ — กดเล่นได้) */
+.interactive-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px}
+.imedia-card{display:flex;flex-direction:column;background:var(--paper);
+  border:1px solid var(--line);border-radius:var(--radius);padding:28px;
+  box-shadow:var(--shadow-sm);transition:.25s;position:relative;overflow:hidden}
+.imedia-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--teal-600),var(--gold-500));
+  transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.imedia-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md);border-color:var(--teal-300)}
+.imedia-card:hover::before{transform:scaleX(1)}
+.imedia-icon{font-size:38px;width:64px;height:64px;border-radius:16px;
+  display:grid;place-items:center;background:var(--teal-50);margin-bottom:16px}
+.imedia-card h5{font-size:1.15rem;color:var(--ink-900);margin-bottom:8px}
+.imedia-card p{color:var(--ink-500);font-size:14.5px;line-height:1.6;flex:1;margin-bottom:20px}
+.imedia-btn{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--ff-head);font-weight:600;font-size:15px;color:#3a2a08;
+  background:linear-gradient(135deg,var(--gold-500),var(--gold-600));
+  padding:10px 20px;border-radius:999px;transition:.25s}
+.imedia-card:hover .imedia-btn{box-shadow:0 10px 22px rgba(185,134,47,.4)}
+
 /* video */
 .video-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
 .video-card{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);background:#000}

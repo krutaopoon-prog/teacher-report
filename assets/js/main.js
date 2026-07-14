@@ -144,8 +144,8 @@
       card.className = "video-card";
       var embed = '<div class="video-embed">';
       if (v.youtube) {
-        embed += '<iframe src="https://www.youtube-nocookie.com/embed/' + v.youtube +
-          '" title="' + (v.title || "") + '" loading="lazy" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>';
+        embed += '<iframe src="https://www.youtube.com/embed/' + v.youtube +
+          '" title="' + (v.title || "") + '" loading="lazy" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
       } else if (v.file) {
         embed += '<video controls preload="metadata" src="' + v.file + '"></video>';
       }
