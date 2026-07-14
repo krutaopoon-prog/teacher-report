@@ -235,6 +235,13 @@ code{background:var(--cream-2);padding:2px 7px;border-radius:6px;font-size:.86em
   padding:10px 20px;border-radius:999px;transition:.25s}
 .imedia-card:hover .imedia-btn{box-shadow:0 10px 22px rgba(185,134,47,.4)}
 
+/* ปุ่มเปิดเอกสาร (Google Drive ฯลฯ) */
+.doc-btn{display:inline-flex;align-items:center;gap:8px;margin:4px 0 18px;
+  font-family:var(--ff-head);font-weight:600;font-size:15px;color:#3a2a08;
+  background:linear-gradient(135deg,var(--gold-500),var(--gold-600));
+  padding:12px 24px;border-radius:999px;transition:.25s;box-shadow:var(--shadow-sm)}
+.doc-btn:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(185,134,47,.45)}
+
 /* video */
 .video-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
 .video-card{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);background:#000}

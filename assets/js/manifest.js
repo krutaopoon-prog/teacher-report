@@ -156,6 +156,10 @@ window.SITE_MANIFEST = {
     "pdf-01.jpeg",
     "pdf-02.jpeg"
   ],
+  "d2-1-teaching/plan": [
+    "Screenshot 2026-07-14 225804.png",
+    "Screenshot 2026-07-14 225843.png"
+  ],
   "d2-2-classroom": [
     "pdf-01.jpeg",
     "pdf-02.jpeg",
