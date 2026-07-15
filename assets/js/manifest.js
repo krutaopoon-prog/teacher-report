@@ -253,7 +253,10 @@ window.SITE_MANIFEST = {
   ],
   "d2-6-ict": [
     "pdf-01.jpeg",
-    "pdf-02.jpeg"
+    "pdf-02.jpeg",
+    "Screenshot 2026-07-15 191452.png",
+    "Screenshot 2026-07-15 191513.png",
+    "Screenshot 2026-07-15 191608.png"
   ],
   "hero": [
     "hero.jpg"
